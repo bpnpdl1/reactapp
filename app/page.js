@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 
 const Page = () => {
     const [marks, setMarks] = useState(80); // set marks to 0
+    const [name, setName] = useState('Bikram Paudel'); // set name to 'Bipin Paudel'
     return (
        
         <>
 
-        <Header />
+        <Header name={name} />
       
          <div>
         <h1 className='text-xl text-blue-900'>My Marks is {marks}</h1>
